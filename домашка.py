@@ -24,8 +24,8 @@ class Person:
             f"{education_text}."
         )
 class Classmate(Person):
-    def __init__(self,name,birth_date,occupatijn,higher_education ,group_name):
-        super().__init__(name,birth_date,occupatijn,higher_education)
+    def __init__(self,name,birth_date,occupation,higher_education ,group_name):
+        super().__init__(name,birth_date,occupation,higher_education)
         self.clas = group_name
 
 
@@ -40,8 +40,8 @@ class Classmate(Person):
 
 
 class Friend(Person):
-    def __init__(self,name,birth_date,occupatijn,higher_education,hobby):
-        super().__init__(name,birth_date,occupatijn,higher_education)
+    def __init__(self,name,birth_date,occupation,higher_education,hobby):
+        super().__init__(name,birth_date,occupation,higher_education)
         self.hobby=hobby
 
     def introduce(self):
