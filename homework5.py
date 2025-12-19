@@ -8,7 +8,7 @@ class Car(Vehicle):
         print("Car starting")
 
 
-class ElectricCar():
+class ElectricCar(Vehicle):
     def start(self):
         super().start()
 
@@ -22,3 +22,4 @@ class Tesla (ElectricCar, Car):
 
 das = Tesla()
 das.start()
+print(Tesla.mro)

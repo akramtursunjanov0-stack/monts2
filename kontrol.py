@@ -40,8 +40,8 @@ class Cat(Animal):
 
 
 
-dog = Dog("Бобик", 3)
-cat = Cat("Мурка", 2)
+dog= Dog("Бобик")
+cat = Cat("Мурка")
 
 
 dog.make_sound()
