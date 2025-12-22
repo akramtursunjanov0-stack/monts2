@@ -31,7 +31,7 @@ print(person2.name, person2.birth_date, person2.occupation, person2.higher_educa
 print(person3.name, person3.birth_date, person3.occupation, person3.higher_education)
 
 
-person1.introduce()
-person2.introduce()
-person3.introduce()
+# person1.introduce()
+# person2.introduce()
+# person3.introduce()
 

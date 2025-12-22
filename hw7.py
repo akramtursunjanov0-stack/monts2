@@ -12,10 +12,10 @@ def create_table():
             id INTEGER PRIMARY KEY,
             name TEXT,
             author TEXT,
-            publication_year INTEGER,
+            publication_year INTEGER NOT NULL,
             genre TEXT,
-            number_of_pages INTEGER,
-            number_of_copies INTEGER
+            number_of_pages INTEGER NOT NULL,
+            number_of_copies INTEGER NOT NULL
         )
     """)
 

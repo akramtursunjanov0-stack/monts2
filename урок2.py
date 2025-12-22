@@ -21,7 +21,6 @@ class Bus(Car):
 
 class Truck(Car):
     def drive_to(self, destination):
-        super().__init__()
         print(f"Truck {self.model} driving to {destination}")
 
     def test(self):
@@ -36,6 +35,7 @@ truck_1 = Truck("red", "Mercedes")
 truck_1.drive_to("Bishkek")
 print("Truck 1:", truck_1.color, truck_1.model)
 truck_1.test()
+
 
 
 
