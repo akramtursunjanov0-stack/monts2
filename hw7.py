@@ -16,8 +16,8 @@ def create_table():
             genre TEXT,
             number_of_pages INTEGER NOT NULL,
             number_of_copies INTEGER NOT NULL
+    )"""
         )
-    """)
 
     conn.commit()
     conn.close()
@@ -40,24 +40,20 @@ def insert_books():
         ("Crime and Punishment", "Fyodor Dostoevsky", 1866, "Classic", 671, 2),
         ("The Alchemist", "Paulo Coelho", 1988, "Philosophy", 208, 6),
 
+        cursor.executemany("""
+            INSERT INTO books (
+                name, author, publication_year, genre,
+                number_of_pages, number_of_copies
+            )
+            VALUES (?, ?, ?, ?, ?, ?)
+        """, books)
+
+        conn.commit()
+        conn.close()
+        print("Книги успешно добавлены в таблицу books.")
+
+        if __name__ == "__main__":
+        create_table()
+        insert_books()
 
 
-
-    ]
-
-    cursor.executemany("""
-        INSERT INTO books (
-            name, author, publication_year, genre,
-            number_of_pages, number_of_copies
-        )
-        VALUES (?, ?, ?, ?, ?, ?)
-    """, books)
-
-    conn.commit()
-    conn.close()
-    print("Книги успешно добавлены в таблицу books.")
-
-
-if __name__ == "__main__":
-    create_table()
-    insert_books()

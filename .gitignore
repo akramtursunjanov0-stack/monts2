@@ -8,3 +8,4 @@ test.txt
 *.sqlite3
 *.db
 library.db
+boks.db

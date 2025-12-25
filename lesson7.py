@@ -8,8 +8,8 @@ def create_tadles(connection):
       city TEXT       
     )
     """)
-# def add_student(connection , name, age , city):
-#     connection.execute('''INSERT INTO student , name, age ,city ''')
+def add_student(connection , name, age , city):
+    connection.execute('''INSERT INTO student , name, age ,city ''')
 
 
 
